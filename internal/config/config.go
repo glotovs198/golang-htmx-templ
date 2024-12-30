@@ -5,4 +5,9 @@ type Config struct {
 	AssetsDir string
 }
 
-func NewConfig() {}
+func NewConfig() *Config {
+	return &Config{
+		AppHost:   "localhost:8080",
+		AssetsDir: "assets",
+	}
+}
